@@ -19,6 +19,9 @@
         <link href='http://fonts.googleapis.com/css?family=Abel|BenchNine' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
+
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
@@ -67,32 +70,38 @@
                         </div><!-- /.col-sm-6 -->
                     </form>
                 </div>
-                <div class="row">
-                    <div class="nav_second ">
-                        <ul class="nav navbar-nav navbar-left">
-                            <li><a href="#"> Início </a></li>
-                            <li><a href="#"> Biblioteca  </a></li>
-                            <li><a href="#"> Treinamento  </a></li>
-                            <li><a href="#"> Conferência  </a></li>
-                            <li><a href="#"> Ao vivo  </a></li>
-                            <li><a href="#"> Fórum  </a></li>
-                        </ul>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="dropdown open">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                              <ul class="dropdown-menu" role="menu">
+            </div>
+        </header>
+
+        <div class="nav_second">
+            <nav class="navbar" role="navigation">
+                <div class="container">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="#"> Início </a></li>
+                        <li><a href="#"> Biblioteca  </a></li>
+                        <li><a href="#"> Treinamento  </a></li>
+                        <li><a href="#"> Conferência  </a></li>
+                        <li><a href="#"> Ao vivo  </a></li>
+                        <li><a href="#"> Fórum  </a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right user-dropdown">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="http://placehold.it/37x37" width="37" height="37" alt="Gustavo Vargas">
+                                Gustavo Vargas <i class="fa fa-cog"></i> <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
                                 <li><a href="#">Action</a></li>
                                 <li><a href="#">Another action</a></li>
                                 <li><a href="#">Something else here</a></li>
                                 <li class="divider"></li>
                                 <li><a href="#">Separated link</a></li>
-                              </ul>
-                            </li>
-                        </ul>
-                    </div>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-        </header>
+            </nav>
+        </div>
 
 
         <!-- build:js scripts/vendor.js -->
