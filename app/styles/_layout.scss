@@ -10,123 +10,29 @@ img{
 }
 
 
-
-
-
 /* ################################################## */
-/* ###################### MENU ###################### */
-/* ################################################## 
-
-.navbar{
-	font-family: 'Abel', sans-serif;
-}
-
-.navbar-nav {
-    padding: 10px 0 0;
-}
-
-.navbar-nav.navbar-right:last-child{
-	margin-right: 0;
-}
-
-.blue_navbar .navbar{
-	margin: 11px 0 28px 0;
-	padding: 0; 
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	border-radius: 0;
-	border: none;
-	background: #0067b1;
-	height: 40px;
-	min-height:inherit;
-}
-
-.blue_navbar .navbar .navbar-nav li a{
-	margin: 0 15px;
-	padding: 0;
-	line-height: inherit;
-}
-
-.blue_navbar .navbar li, .blue_navbar .navbar li a{
-	color:#ffffff;
-	text-transform: uppercase;
-	font-family: 'Abel', sans-serif;
-	font-size: 12px;
-}
-
-.blue_navbar .navbar li{
-	border-right: 1px solid #1274bb;
-}
-
-.blue_navbar .navbar li:last-child{
-	border-right: none;
-}
-
-*/
-
-
+/* ###################### FOOTER #################### */
 /* ################################################## */
-/* ############### BUSCAR TOPO ###################### */
-/* ################################################## */
+#main_footer{
+	ul{
+		margin:0;
+		padding: 0;
+		list-style: none;
+	}
+	li{
+		&.leia_mais{
+			@extend .clearfix;
 
-.form-control {
-    border: none;
-    height: auto;
-}
+			span{
+				@extend .pull-left;
+				@include text-overflow;
+				width: 60%;
+				display: block;
+			}
 
-#form_buscar_top input[type='text']{
-	margin: 0;
-	padding: 9px 10px;
-	color: #1274bb;
-	font-family: 'Abel', sans-serif;
-	font-size: 12px;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	border-radius: 0;
-	border-left: 1px solid #2586cb;
-	border-top: 1px solid #2586cb;
-	border-bottom: 1px solid #2586cb;
-}
-
-.bt_buscar{
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	border-radius: 0;
-	border: none;
-	border-top: 1px solid #2586cb;
-	border-right: 1px solid #2586cb;
-	border-bottom: 1px solid #2586cb;
-	padding: 7px 0;
-}
-
-.input-group-btn > .btn:hover, .input-group-btn > .btn:focus, .input-group-btn > .btn:active{
-	z-index: 0;
-}
-
-.input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group > .btn, .input-group-btn:last-child > .dropdown-toggle, .input-group-btn:first-child > .btn:not(:first-child), .input-group-btn:first-child > .btn-group:not(:first-child) > .btn{
-	background:#fff;
-}
-
-.input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group{
-	margin-left: 0;
-}
-
-
-
-
-
-/* ################################################## */
-/* ############### SECOND NAVBAR #################### */
-/* ################################################## */
-
-.nav_second nav{
-	margin: 0;
-	padding: 0;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	-webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 1);
-	-moz-box-shadow:    0px 0px 5px 0px rgba(50, 50, 50, 1);
-	box-shadow:         0px 0px 5px 0px rgba(50, 50, 50, 1);
-	background: #fffff;
+			a{
+				@extend .pull-right;
+			}
+		}
+	}
 }
