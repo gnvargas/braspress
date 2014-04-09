@@ -37,192 +37,196 @@
         <![endif]-->
 
 
-        <div class="blue_navbar">
-            <div class="navbar navbar-inverse" id="menu-acces">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navtop">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+        <div class="page-wrap">
+
+            <div class="blue_navbar">
+                <div class="navbar navbar-inverse" id="menu-acces">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navtop">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <nav id="navtop" class="collapse navbar-collapse navbar navbar-inverse" role="navigation">
+                    <div class="container">
+                        <div class="row">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#"> sobre </a></li>
+                                <li><a href="#"> dúvidas frequentes  </a></li>
+                                <li><a href="#"> termos e condições  </a></li>
+                                <li><a href="#"> suporte  </a></li>
+                                <li><a href="#"> contato  </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
             </div>
-            <nav id="navtop" class="collapse navbar-collapse navbar navbar-inverse" role="navigation">
+
+            <header>
                 <div class="container">
                     <div class="row">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#"> sobre </a></li>
-                            <li><a href="#"> dúvidas frequentes  </a></li>
-                            <li><a href="#"> termos e condições  </a></li>
-                            <li><a href="#"> suporte  </a></li>
-                            <li><a href="#"> contato  </a></li>
+                        <div class="col-sm-6"><a href="#" class="logo_header"><img src="images/logo_braspress.png" alt=""></a></div>
+                        <div class="col-sm-6">
+                        <form  role="form" id="form_buscar_top"> 
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="buscar" placeholder="Digite o que procura: Treinamentos, Vídeos ou Profissionais">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default bt_buscar" type="button">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                            </div><!-- /input-group -->
+                        </form>
+                        </div><!-- /.col-sm-6 -->
+                    </div>
+                </div>
+            </header>
+
+            <div class="nav_second">
+                <nav class="navbar" role="navigation">
+                    <div class="container">
+                        <ul class="nav navbar-nav navbar-left col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                            <li><a href="#" class="active"><i class="fa fa-home fa-lg"></i> Início </a></li>
+                            <li><a href="#"><i class="fa fa-caret-square-o-right fa-lg"></i> Biblioteca  </a></li>
+                            <li><a href="#"><i class="fa fa-bar-chart-o fa-lg"></i> Treinamento  </a></li>
+                            <li><a href="#"><i class="fa fa-users fa-lg"></i> Conferência  </a></li>
+                            <li><a href="#"><i class="fa fa-video-camera fa-lg"></i> Ao vivo  </a></li>
+                            <li><a href="#"><i class="fa fa-stack-exchange fa-lg"></i> Fórum  </a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right user-dropdown col-lg-3 col-xs-12">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="http://placehold.it/37x37" width="37" height="37" alt="Gustavo Vargas">
+                                    <span> Gustavo Vargas </span> 
+                                    <i class="fa fa-cog fa-lg"></i> <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#"><i class="fa fa-user fa-lg"></i> Perfil </a></li>
+                                    <li><a href="#"><i class="fa fa-bar-chart-o fa-lg"></i>Treinamentos</a></li>
+                                    <li><a href="#"><i class="fa fa-envelope fa-lg"></i>Mensagens</a></li>
+                                    <li><a href="#"><i class="fa fa-power-off fa-lg"></i>Logout</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
-                </div>
-            </nav>
-
-        </div>
-
-        <header>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6"><a href="#" class="logo_header"><img src="images/logo_braspress.png" alt=""></a></div>
-                    <div class="col-sm-6">
-                    <form  role="form" id="form_buscar_top"> 
-                        <div class="input-group">
-                            <input type="text" class="form-control" name="buscar" placeholder="Digite o que procura: Treinamentos, Vídeos ou Profissionais">
-                            <span class="input-group-btn">
-                                <button class="btn btn-default bt_buscar" type="button">
-                                    <span class="glyphicon glyphicon-search"></span>
-                                </button>
-                            </span>
-                        </div><!-- /input-group -->
-                    </form>
-                    </div><!-- /.col-sm-6 -->
-                </div>
+                </nav>
             </div>
-        </header>
 
-        <div class="nav_second">
-            <nav class="navbar" role="navigation">
-                <div class="container">
-                    <ul class="nav navbar-nav navbar-left col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                        <li><a href="#" class="active"><i class="fa fa-home fa-lg"></i> Início </a></li>
-                        <li><a href="#"><i class="fa fa-caret-square-o-right fa-lg"></i> Biblioteca  </a></li>
-                        <li><a href="#"><i class="fa fa-bar-chart-o fa-lg"></i> Treinamento  </a></li>
-                        <li><a href="#"><i class="fa fa-users fa-lg"></i> Conferência  </a></li>
-                        <li><a href="#"><i class="fa fa-video-camera fa-lg"></i> Ao vivo  </a></li>
-                        <li><a href="#"><i class="fa fa-stack-exchange fa-lg"></i> Fórum  </a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right user-dropdown col-lg-3 col-xs-12">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <img src="http://placehold.it/37x37" width="37" height="37" alt="Gustavo Vargas">
-                                <span> Gustavo Vargas </span> 
-                                <i class="fa fa-cog fa-lg"></i> <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#"><i class="fa fa-user fa-lg"></i> Perfil </a></li>
-                                <li><a href="#"><i class="fa fa-bar-chart-o fa-lg"></i>Treinamentos</a></li>
-                                <li><a href="#"><i class="fa fa-envelope fa-lg"></i>Mensagens</a></li>
-                                <li><a href="#"><i class="fa fa-power-off fa-lg"></i>Logout</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-
-        <div class="content_transparent">
-            
-            <div class="content_breadcrumb">
-                <div class="container">
-                    
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <ol class="breadcrumb">
-                                <li><span> <i class="fa fa-bar-chart-o fa-lg"></i> Treinamento </span></li>
-                            </ol>
-                        </div>
-                    </div>    
-                </div>
-            </div><!-- /.content_breadcrumb -->
-
-            <div class="content_metadados">
+            <div class="content_transparent">
                 
-                <div class="container">
+                <div class="content_breadcrumb">
+                    <div class="container">
+                        
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <ol class="breadcrumb">
+                                    <li><span> <i class="fa fa-bar-chart-o fa-lg"></i> Treinamento </span></li>
+                                </ol>
+                            </div>
+                        </div>    
+                    </div>
+                </div><!-- /.content_breadcrumb -->
+
+                <div class="content_metadados">
                     
+                    <div class="container">
+                        
+                        <div class="row">
+                            
+                            <div class="col-md-4 metadados">
+                                <div class="clearfix">
+                                    <div class="metadado_titulo">
+                                        <span> <i class="fa fa-check-square-o fa-lg"></i> Ativas agora </span>
+                                    </div>
+                                    <div class="metadado_conteudo">
+                                        <span> 06 </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4 metadados">
+                                <div class="clearfix">
+                                    <div class="metadado_titulo">
+                                        <span> <i class="fa fa-clock-o fa-lg"></i> Última conferência iniciada a </span>
+                                    </div>
+                                    <div class="metadado_conteudo">
+                                        <span> 47 minutos </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-4 metadados">
+                                <div class="clearfix">
+                                    <div class="metadado_titulo">
+                                        <span> <i class="fa fa-users fa-lg"></i> Participações </span>
+                                    </div>
+                                    <div class="metadado_conteudo">
+                                        <span> 547 </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                </div><!-- /.content_metadados-->
+
+            </div><!-- /.content_transparent-->
+
+            <div class="container_conferencia">
+                <div class="container">
                     <div class="row">
-                        
-                        <div class="col-md-4 metadados">
-                            <div class="clearfix">
-                                <div class="metadado_titulo">
-                                    <span> <i class="fa fa-check-square-o fa-lg"></i> Ativas agora </span>
-                                </div>
-                                <div class="metadado_conteudo">
-                                    <span> 06 </span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-4 metadados">
-                            <div class="clearfix">
-                                <div class="metadado_titulo">
-                                    <span> <i class="fa fa-clock-o fa-lg"></i> Última conferência iniciada a </span>
-                                </div>
-                                <div class="metadado_conteudo">
-                                    <span> 47 minutos </span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-4 metadados">
-                            <div class="clearfix">
-                                <div class="metadado_titulo">
-                                    <span> <i class="fa fa-users fa-lg"></i> Participações </span>
-                                </div>
-                                <div class="metadado_conteudo">
-                                    <span> 547 </span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
+                        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-2 col-sm-12 col-xs-12">
+                            
+                            <div class="content_audio col-xs-12">
+                                <div class="img_audio"><img src="images/img_audio.jpg" alt=""></div>
+                                <audio id="player_audio" src="http://kolber.github.io/audiojs/demos/mp3/juicy.mp3" controls="controls"></audio>
+                            </div><!-- /.content_audio-->
 
-                </div>
-
-            </div><!-- /.content_metadados-->
-
-        </div><!-- /.content_transparent-->
-
-        <div class="container_conferencia">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-2 col-sm-12 col-xs-12">
-                        
-                        <div class="content_audio col-xs-12">
-                            <div class="img_audio"><img src="images/img_audio.jpg" alt=""></div>
-                            <audio id="player_audio" src="http://kolber.github.io/audiojs/demos/mp3/juicy.mp3" controls="controls"></audio>
-                        </div><!-- /.content_audio-->
-
-                        <div class="global_video">
-                            <script src="http://cdnapi.kaltura.com/p/1299991/sp/129999100/embedIframeJs/uiconf_id/13044962/partner_id/1299991">
-                            </script>
-                            <div id="video_conferencia" class="video_internos" itemscope itemtype="http://schema.org/VideoObject">
-                                <script>
-                                  kWidget.embed({
-                                    "targetId": "video_conferencia",
-                                    "wid": "_1299991",
-                                    "uiconf_id": 15893982,
-                                    "flashvars": {
-                                      "akamaiHD": {
-                                        "loadingPolicy": "preInitialize",
-                                        "asyncInit": "true"
-                                      },
-                                      "streamerType": "hdnetwork"
-                                    },
-                                    'params':{
-                                        'wmode': 'transparent'
-                                    },
-                                    "cache_st": 1372264735,
-                                    "entry_id": "0_4g2qxgdo"
-                                  });
+                            <div class="global_video">
+                                <script src="http://cdnapi.kaltura.com/p/1299991/sp/129999100/embedIframeJs/uiconf_id/13044962/partner_id/1299991">
                                 </script>
-                            </div><!-- /#video_conferencia-->
-                        </div><!-- /.global_video-->
+                                <div id="video_conferencia" class="video_internos" itemscope itemtype="http://schema.org/VideoObject">
+                                    <script>
+                                      kWidget.embed({
+                                        "targetId": "video_conferencia",
+                                        "wid": "_1299991",
+                                        "uiconf_id": 15893982,
+                                        "flashvars": {
+                                          "akamaiHD": {
+                                            "loadingPolicy": "preInitialize",
+                                            "asyncInit": "true"
+                                          },
+                                          "streamerType": "hdnetwork"
+                                        },
+                                        'params':{
+                                            'wmode': 'transparent'
+                                        },
+                                        "cache_st": 1372264735,
+                                        "entry_id": "0_4g2qxgdo"
+                                      });
+                                    </script>
+                                </div><!-- /#video_conferencia-->
+                            </div><!-- /.global_video-->
 
-                        <div class="btn_funcionalidades col-xs-12">
-                            <div class="btn-group pull-right">
-                              <button type="button" class="btn_icon btn_light"> <i class="fa fa-lightbulb-o fa-lg"></i> </button>
-                              <button type="button" class="btn_icon btn_audio"> <i class="fa fa-microphone fa-lg"></i> </button>
-                            </div>
-                        </div><!-- /.btn_funcionalidades-->
+                            <div class="btn_funcionalidades col-xs-12">
+                                <div class="btn-group pull-right">
+                                  <button type="button" class="btn_icon btn_light"> <i class="fa fa-lightbulb-o fa-lg"></i> </button>
+                                  <button type="button" class="btn_icon btn_audio"> <i class="fa fa-microphone fa-lg"></i> </button>
+                                </div>
+                            </div><!-- /.btn_funcionalidades-->
 
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div><!--/.container_conferencia -->
+            </div><!--/.container_conferencia -->
 
-        <div class="light"></div>
+            <div class="light"></div>
+
+        </div> <!-- .page-wrap -->
 
         <footer id="main_footer">
             <div class="primary_footer">
