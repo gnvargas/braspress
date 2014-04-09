@@ -1,0 +1,37 @@
+/* ################################################## */
+/* ###################### 768px ##################### */
+/* ################################################## */
+@media (max-width: 768px) {
+
+	/* ###################### HEADER  ################# */
+	.logo_header img{
+		display: block;
+		margin: 0 auto;
+	}
+	
+
+
+	/* ###################### MENU  ################### */
+	#menu-acces{
+		display: block;
+	}
+
+	.blue_navbar .navbar-collapse li a{
+		border: none;
+		padding: 0;
+	}
+
+	.blue_navbar .navbar-collapse li a:hover,.blue_navbar .navbar-collapse li a:focus{
+		background: #ffffff;
+		color: #0067b1;
+		padding: 5px;
+	}
+
+
+
+	/* ##################### BUSCA HOME  ############## */
+	#form_buscar_top {
+    margin-bottom: 5px;
+	}
+
+}

@@ -1,0 +1,148 @@
+/* ################################################## */
+/* ################# CONFERENCIA #################### */
+/* ################################################## */
+.container_conferencia{
+	margin:50px 0 0 0;
+}
+
+.title_box_conference{
+	position: absolute;
+	top:55px;
+	text-align: center;
+	padding: 0 235px;
+	color: #ffffff;
+	font-size: 40px;
+	text-transform: uppercase;
+	font-family: $font_BenchNine;
+	line-height: 1.3;
+	z-index: 999;
+}
+
+.global_video {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+	z-index: 2;
+}
+.global_video object,
+.global_video embed, {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	max-width: 770px;
+}
+
+.btn_funcionalidades{
+	margin: 10px 0 0 0;
+	height: auto;
+}
+
+.btn_icon{
+	margin: 0 0 0 10px;
+	padding:0;
+	width: 25px;
+	height: 25px;
+	display: block;
+	position: relative;
+	color: #2b2b2b;
+	border: 1px solid #2b2b2b;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	background: transparent;
+	float: left;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	z-index: 999999;
+}
+
+.btn_icon i{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.btn_icon:hover{
+	border: 1px solid #0067b1;
+	color: #0067b1;
+}
+
+.btn_light.active{
+	border: 1px solid #daca16;
+	color: #daca16;
+}
+
+.btn_audio.active{
+	border: 1px solid #0067b1;
+	color: #0067b1;
+}
+
+.content_audio{
+	display: none;
+	z-index: 2;
+}
+
+.img_audio{
+	width: 100%;
+	max-width: 770px;
+	height: auto;
+	border: 1px solid #2b2b2b;
+}
+
+.img_audio i{
+	text-align: center;
+	line-height: 370px;
+	margin: 0 auto;
+	display: block;
+}
+
+
+
+
+
+/* ################################################## */
+/* ######### CONTAINER VIDEO TREINAMENTO ############ */
+/* ################################################## */
+.container_video{
+}
+
+
+
+
+
+/* ################################################## */
+/* ######### CONTAINER TABS VIDEO TREINAMENTO ####### */
+/* ################################################## */
+.treinamento_perfil{
+	border: 1px solid #aaaaaa;
+	width: 100%;
+	height: auto;
+	padding: 19px;
+
+		img{
+			float: left;
+			margin-right: 19px;
+	}
+
+	h1{
+		margin: 5px 0 6px 0;
+		font-family: $font_BenchNine;
+		font-size: 22px;
+		font-weight: bold;
+		color: $orange_color;
+		text-transform: uppercase;
+	}
+
+	p{
+		margin: 2px 0 0 0;
+		color: $p_color;
+		font-family: $font_abel;
+		font-size: 12px;
+
+	}
+}
