@@ -38,8 +38,15 @@
 
 
         <div class="blue_navbar">
-            
-            <nav class="navbar navbar-inverse" role="navigation">
+            <div class="navbar navbar-inverse" id="menu-acces">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navtop">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <nav id="navtop" class="collapse navbar-collapse navbar navbar-inverse" role="navigation">
                 <div class="container">
                     <div class="row">
                         <ul class="nav navbar-nav navbar-right">
@@ -58,19 +65,19 @@
         <header>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6"><a href="#"><img src="images/logo_braspress.png" alt=""></a></div>
-                    <form  role="form" id="form_buscar_top">
-                        <div class="col-sm-6">
-                            <div class="input-group">
-                                <input type="text" class="form-control" name="buscar" placeholder="Digite o que procura: Treinamentos, Vídeos ou Profissionais">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default bt_buscar" type="button">
-                                        <span class="glyphicon glyphicon-search"></span>
-                                    </button>
-                                </span>
-                            </div><!-- /input-group -->
-                        </div><!-- /.col-sm-6 -->
+                    <div class="col-sm-6"><a href="#" class="logo_header"><img src="images/logo_braspress.png" alt=""></a></div>
+                    <div class="col-sm-6">
+                    <form  role="form" id="form_buscar_top"> 
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="buscar" placeholder="Digite o que procura: Treinamentos, Vídeos ou Profissionais">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default bt_buscar" type="button">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                            </span>
+                        </div><!-- /input-group -->
                     </form>
+                    </div><!-- /.col-sm-6 -->
                 </div>
             </div>
         </header>
@@ -78,7 +85,7 @@
         <div class="nav_second">
             <nav class="navbar" role="navigation">
                 <div class="container">
-                    <ul class="nav navbar-nav navbar-left">
+                    <ul class="nav navbar-nav navbar-left col-lg-8 col-md-12 col-sm-12 col-xs-12">
                         <li><a href="#" class="active"><i class="fa fa-home fa-lg"></i> Início </a></li>
                         <li><a href="#"><i class="fa fa-caret-square-o-right fa-lg"></i> Biblioteca  </a></li>
                         <li><a href="#"><i class="fa fa-bar-chart-o fa-lg"></i> Treinamento  </a></li>
@@ -86,7 +93,7 @@
                         <li><a href="#"><i class="fa fa-video-camera fa-lg"></i> Ao vivo  </a></li>
                         <li><a href="#"><i class="fa fa-stack-exchange fa-lg"></i> Fórum  </a></li>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right user-dropdown">
+                    <ul class="nav navbar-nav navbar-right user-dropdown col-lg-3 col-xs-12">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <img src="http://placehold.it/37x37" width="37" height="37" alt="Gustavo Vargas">
@@ -105,156 +112,117 @@
             </nav>
         </div>
 
-        <div class="content_breadcrumb">
-            <div class="container">
+        <div class="content_transparent">
+            
+            <div class="content_breadcrumb">
+                <div class="container">
+                    
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ol class="breadcrumb">
+                                <li><span> <i class="fa fa-bar-chart-o fa-lg"></i> Treinamento </span></li>
+                            </ol>
+                        </div>
+                    </div>    
+                </div>
+            </div><!-- /.content_breadcrumb -->
+
+            <div class="content_metadados">
                 
-                <div class="row">
-                    <div class="col-xs-12">
-                        <ol class="breadcrumb">
-                            <li><span> <i class="fa fa-bar-chart-o fa-lg"></i> Treinamento </span></li>
-                        </ol>
-                    </div>
-                </div>
-                
-                <div class="row">
+                <div class="container">
                     
-                    <div class="col-md-4 metadados">
-                        <div class="clearfix">
-                            <div class="metadado_titulo">
-                                <span> <i class="fa fa-check-square-o fa-lg"></i> Ativas agora </span>
-                            </div>
-                            <div class="metadado_conteudo">
-                                <span> 06 </span>
+                    <div class="row">
+                        
+                        <div class="col-md-4 metadados">
+                            <div class="clearfix">
+                                <div class="metadado_titulo">
+                                    <span> <i class="fa fa-check-square-o fa-lg"></i> Ativas agora </span>
+                                </div>
+                                <div class="metadado_conteudo">
+                                    <span> 06 </span>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <div class="col-md-4 metadados">
-                        <div class="clearfix">
-                            <div class="metadado_titulo">
-                                <span> <i class="fa fa-clock-o fa-lg"></i> Última conferência iniciada a </span>
-                            </div>
-                            <div class="metadado_conteudo">
-                                <span> 47 minutos </span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-4 metadados">
-                        <div class="clearfix">
-                            <div class="metadado_titulo">
-                                <span> <i class="fa fa-users fa-lg"></i> Participações </span>
-                            </div>
-                            <div class="metadado_conteudo">
-                                <span> 547 </span>
+                        
+                        <div class="col-md-4 metadados">
+                            <div class="clearfix">
+                                <div class="metadado_titulo">
+                                    <span> <i class="fa fa-clock-o fa-lg"></i> Última conferência iniciada a </span>
+                                </div>
+                                <div class="metadado_conteudo">
+                                    <span> 47 minutos </span>
+                                </div>
                             </div>
                         </div>
+                        
+                        <div class="col-md-4 metadados">
+                            <div class="clearfix">
+                                <div class="metadado_titulo">
+                                    <span> <i class="fa fa-users fa-lg"></i> Participações </span>
+                                </div>
+                                <div class="metadado_conteudo">
+                                    <span> 547 </span>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
-                    
-                </div>
-            </div>
-        </div><!-- /.content_breadcrumb -->
 
-        <div class="container_video">
+                </div>
+
+            </div><!-- /.content_metadados-->
+
+        </div><!-- /.content_transparent-->
+
+        <div class="container_conferencia">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <img src="../images/img_video.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div><!--/.container_video -->
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-2 col-sm-12 col-xs-12">
+                        
+                        <div class="content_audio col-xs-12">
+                            <div class="img_audio"><img src="images/img_audio.jpg" alt=""></div>
+                            <audio id="player_audio" src="http://kolber.github.io/audiojs/demos/mp3/juicy.mp3" controls="controls"></audio>
+                        </div><!-- /.content_audio-->
 
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <ul class="nav nav-tabs">
-                        <li class="active"><a href="#informacoes" data-toggle="tab">informações</a></li>
-                        <li><a href="#comentarios" data-toggle="tab">comentarios</a></li>
-                        <li><a href="#slides" data-toggle="tab">slides</a></li>
-                        <li><a href="#arquivos" data-toggle="tab">arquivos</a></li>
-                        <li><a href="#questionarios" data-toggle="tab">questionarios</a></li>
-                        <li class="pull-right"><a href="#proxima_etapas" data-toggle="tab">próxima etapas</a></li>
-                    </ul>
-                    <div class="tab-content">
-                        
-                        <div id="informacoes" class="tab-pane active">
-                            
-                            <h2>treinamento rh - etapa 01 </h2>
-                            
-                            <div class="col-md-7  col-xs-12"> 
-                              <p> Descrição do vídeo. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum. </p> 
+                        <div class="global_video">
+                            <script src="http://cdnapi.kaltura.com/p/1299991/sp/129999100/embedIframeJs/uiconf_id/13044962/partner_id/1299991">
+                            </script>
+                            <div id="video_conferencia" class="video_internos" itemscope itemtype="http://schema.org/VideoObject">
+                                <script>
+                                  kWidget.embed({
+                                    "targetId": "video_conferencia",
+                                    "wid": "_1299991",
+                                    "uiconf_id": 15893982,
+                                    "flashvars": {
+                                      "akamaiHD": {
+                                        "loadingPolicy": "preInitialize",
+                                        "asyncInit": "true"
+                                      },
+                                      "streamerType": "hdnetwork"
+                                    },
+                                    'params':{
+                                        'wmode': 'transparent'
+                                    },
+                                    "cache_st": 1372264735,
+                                    "entry_id": "0_4g2qxgdo"
+                                  });
+                                </script>
+                            </div><!-- /#video_conferencia-->
+                        </div><!-- /.global_video-->
+
+                        <div class="btn_funcionalidades col-xs-12">
+                            <div class="btn-group pull-right">
+                              <button type="button" class="btn_icon btn_light"> <i class="fa fa-lightbulb-o fa-lg"></i> </button>
+                              <button type="button" class="btn_icon btn_audio"> <i class="fa fa-microphone fa-lg"></i> </button>
                             </div>
-                            
-                            <div class="col-md-4 col-md-offset-1 col-xs-12">
-                              
-                              <div class="treinamento_perfil pull-right">
-                                
-                                <img src="http://placehold.it/101x120" width="101" height="120" alt="Nome da palestrante">
-                                
-                                <h1> Nome da palestrante </h1>
-                                
-                                <p> www.dominio.com.br </p>
-                                
-                                <p> email@dominio.com.br </p>
-                                
-                                <p>
-                                  <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                  </span> /FaceboookPalestrante 
-                                </p>
-                                
-                                <p>
-                                  <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                  </span> /FaceboookPalestrante 
-                                </p>
-                                
-                                <p> Texto de perfil da Palestrante. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. </p>
-                              
-                              </div><!--/.treinamento_perfil -->
-                              
-                            </div>
-                        
-                        </div><!--/#informacoes -->
-                        
-                        <div id="comentarios" class="tab-pane">
-                            <h2>comentarios</h2>
-                        </div>
-                        
-                        <div id="slides" class="tab-pane">
-                            <h2>slides</h2>
-                        </div>
-                        
-                        <div id="arquivos" class="tab-pane">
-                            <p>Instruções do instrutor acerca de algum arquivo.<p>
-                        
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-                        suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
-                        
-                            <div class="row">
-                                <div class="col-md-2 col-md-offset-2">DOCX</div>
-                                <div class="col-md-2">PPTX</div>
-                                <div class="col-md-2">XLSX</div>
-                                <div class="col-md-2">PPTX</div>
-                            </div>
-                        
-                        </div>
-                        
-                        <div id="questionarios" class="tab-pane">
-                            <h2>questionarios</h2>
-                        </div>
-                        
-                        <div id="proxima_etapas" class="tab-pane">
-                            <h2>próxima etapas</h2>
-                        </div>
+                        </div><!-- /.btn_funcionalidades-->
 
                     </div>
                 </div>
             </div>
-        </div>
+        </div><!--/.container_conferencia -->
+
+        <div class="light"></div>
 
         <footer id="main_footer">
             <div class="primary_footer">
@@ -345,6 +313,7 @@
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
+        <script src="scripts/mediaelement-and-player.min.js"></script>
         <!-- endbuild -->
 </body>
 </html>
