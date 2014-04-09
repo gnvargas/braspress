@@ -47,6 +47,13 @@ a:after,a:before,a:focus,a:hover{
 	display: block;
 	margin-top: 17px;
 	margin-bottom: 37px;
+
+	img {
+			@media (max-width: $screen-sm-max) {
+				display: block;
+				margin: 0 auto;
+			}
+		}
 }
 
 .light{
@@ -97,10 +104,6 @@ a:after,a:before,a:focus,a:hover{
 	display: none;
 }
 
-#navtop{
-	border-top: 1px solid #FFFFFF;
-}
-
 .btn-toogle .fa{
 	margin: 0;
 }
@@ -112,6 +115,11 @@ a:after,a:before,a:focus,a:hover{
 	-ms-transition: all 0.4s ease-in-out;
 	-o-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
+	
+	@media (max-width: 768px) {
+		border:none;
+	}
+
 }
 
 .navbar-inverse .navbar-nav > li > a:hover{
@@ -120,6 +128,9 @@ a:after,a:before,a:focus,a:hover{
 
 .blue_navbar{
 	margin-top: 10px;
+	@media (max-width: $screen-sm-max) {
+		margin-top: 0;
+	}
 }
 
 .navbar-nav{
@@ -231,16 +242,18 @@ a:after,a:before,a:focus,a:hover{
 	color: $gray_color;
 	border-left: 1px solid #dddddd;
 	padding: 14px 25px;
-}
 
-.nav_second .nav > li > a:hover,
-.nav_second .nav > li > a:focus,
-.nav_second .nav > li > a.active{
-	background-color:#fcfcfc;
+	@media (max-width: $screen-md-max) {
+		padding: 14px 21px; 
+	}
+	
+	&:hover,&:focus,&.active{
+		background-color:#fcfcfc;
 	color: #0067b1;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+	}
 }
 
 .navbar-nav.navbar-right:last-child{
