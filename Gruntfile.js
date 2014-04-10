@@ -1,4 +1,4 @@
-// Generated on 2014-03-20 using generator-webapp 0.4.8
+// Generated on 2014-04-10 using generator-webapp 0.4.8
 'use strict';
 
 // # Globbing
@@ -218,7 +218,7 @@ module.exports = function (grunt) {
             options: {
                 dest: '<%= config.dist %>'
             },
-            html: '<%= config.app %>/index.html'
+            html: '<%= config.app %>/**/*.html'
         },
 
         // Performs rewrites based on rev and the useminPrepare configuration
@@ -256,14 +256,14 @@ module.exports = function (grunt) {
         htmlmin: {
             dist: {
                 options: {
-                    collapseBooleanAttributes: true,
-                    collapseWhitespace: true,
-                    removeAttributeQuotes: true,
-                    removeCommentsFromCDATA: true,
-                    removeEmptyAttributes: true,
-                    removeOptionalTags: true,
-                    removeRedundantAttributes: true,
-                    useShortDoctype: true
+                    // collapseBooleanAttributes: true,
+                    // collapseWhitespace: true,
+                    // removeAttributeQuotes: true,
+                    // removeCommentsFromCDATA: true,
+                    // removeEmptyAttributes: true,
+                    // removeOptionalTags: true,
+                    // removeRedundantAttributes: true,
+                    // useShortDoctype: true
                 },
                 files: [{
                     expand: true,
